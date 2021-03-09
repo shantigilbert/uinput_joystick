@@ -126,8 +126,8 @@ int main(int argc, char **argv) {
 		y = y > joy.adcs[1].max ? joy.adcs[1].max : y;
 		y = y < joy.adcs[1].min ? joy.adcs[1].min : y;
 		
-		x = x * (-1);
-		//y = y;				
+		//x = x * (-1);
+		y = y * (-1);				
 		//printf("\n get x: %d  y: %d \n", x, y);
 		joystick_move(x, y);
 		#endif
