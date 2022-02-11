@@ -1,6 +1,5 @@
 #ifndef UINPUT_CTL_H_
 #define UINPUT_CTL_H_
-
 #include <sys/ioctl.h>
 #include <linux/uinput.h>
 #include <unistd.h>
@@ -33,8 +32,7 @@ struct joypad {
 	int deadzone;
 	struct bt_adc adcs[2];
 };
-
-static struct joypad  joy;
+struct joypad  joy;
 
 void joystic_init(void);
 void joystick_move(int xVal, int yVal);
