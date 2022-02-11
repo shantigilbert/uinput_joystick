@@ -10,14 +10,11 @@
 
 
 int main(int argc, char **argv) {
-	int i = 0, rd = 0;
+	int rd = 0;
 	fd_set readFds;
 	int retval;
 	struct timeval respTime;
-	unsigned char input_buf[bufsize],output_buf[bufsize];
-	//int size=0;
-	int sendsize,sleeptime=0;
-	int j,error=0;
+	unsigned char output_buf[bufsize];
 	int firsttime = 1;
 	int x = 0,y = 0;
 

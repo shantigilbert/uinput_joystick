@@ -7,6 +7,7 @@ OBJ = ts_uart.o uinput-ctl.o common.o
 
 $(PROM): $(OBJ)	
 	$(CXX) -o $(PROM) $(OBJ) $(CXXFLAGS)
+	$(CC) fftest.c -o fftest $(CXXFLAGS)
 %.o: %.cpp
 	$(CXX) -c $< -o $@ $(CXXFLAGS)
 clean:

@@ -28,7 +28,7 @@ static int open_joystick_device()
     return fd;
 }
  
-static void close_joystick_device()
+void close_joystick_device()
 {
     if (fd > 0)
     {
