@@ -34,12 +34,12 @@ struct uart_test {
 	unsigned int random_enable;				/* determines if data packets sent are fixed or "random" size */
 };
 
-static struct termios oldtio;
+extern struct termios oldtio;
 
-static int fd1,fd2;
-static struct uart_test ut;
-static char tx_rx;
-static int read_flag;
+extern int fd1,fd2;
+extern struct uart_test ut;
+extern char tx_rx;
+extern int read_flag;
 
 int writeport(int *fd, unsigned char *chars,int len);
 
