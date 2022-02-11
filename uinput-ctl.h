@@ -32,7 +32,8 @@ struct joypad {
 	int deadzone;
 	struct bt_adc adcs[2];
 };
-struct joypad  joy;
+
+extern struct joypad joy;
 
 void joystic_init(void);
 void joystick_move(int xVal, int yVal);

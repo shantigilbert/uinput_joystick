@@ -1,11 +1,12 @@
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
- 
-#include "uinput-ctl.h" 
- 
+
+#include "uinput-ctl.h"
+
+struct joypad joy;
 static int fd = -1;
- 
+
 static int open_joystick_device()
 {
     if (fd > 0)

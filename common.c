@@ -1,5 +1,11 @@
 #include "common.h"
 
+struct termios oldtio;
+int fd1,fd2;
+struct uart_test ut;
+char tx_rx;
+int read_flag;
+
 int writeport(int *fd, unsigned char *chars,int len) {
         int n = write(*fd, chars,len);
         if (n < 0) {
